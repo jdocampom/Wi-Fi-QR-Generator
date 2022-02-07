@@ -40,12 +40,12 @@ struct DetailView: View {
                     Text("SSID")
                     Spacer()
                     Text(network.ssid ?? "Unknown")
-                        .textSelection(.enabled)
-                }
+                        .textSelection(.enabled)                }
                 HStack {
                     Text("Password")
                     Spacer()
-                    Text(String(repeating: "*", count: network.password!.count))
+                    Text(network.password ?? "Unknown")
+//                    Text(String(repeating: "*", count: network.password!.count))
                         .textSelection(.enabled)
                 }
                 HStack {
@@ -94,11 +94,11 @@ struct DetailView: View {
             ShareSheet(items: items)
         }
         .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button("Save") {
-                    showingDeleteAlert = true
-                }
-            }
+//            ToolbarItem(placement: .navigationBarTrailing) {
+//                Button("Save") {
+//                    dismiss()
+//                }
+//            }
             ToolbarItem(placement: .bottomBar) {
                 Button {
                     showShareQRSheet()
@@ -163,7 +163,7 @@ struct DetailView: View {
         items.removeAll()
         items.append(UIImage(data: generateQR(ssid: network.ssid ?? "", security: network.security ?? "" , password: network.password ?? "", hidden: network.hidden)!)!)
     }
-        
+    
     func deleteNetwork() {
         viewContext.delete(network)
         dismiss()

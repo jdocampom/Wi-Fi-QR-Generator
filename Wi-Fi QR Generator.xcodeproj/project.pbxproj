@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8643A47227B19189005F821B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8643A47127B19189005F821B /* Extensions.swift */; };
 		865CA7A627B086BE00DDEF8E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865CA7A527B086BE00DDEF8E /* DetailView.swift */; };
 		865CA7A827B08D3600DDEF8E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865CA7A727B08D3600DDEF8E /* DataController.swift */; };
 		865CA7AA27B0A6C000DDEF8E /* AddNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865CA7A927B0A6C000DDEF8E /* AddNetworkView.swift */; };
@@ -22,7 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8643A47127B19189005F821B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		865CA7A527B086BE00DDEF8E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		865CA7A727B08D3600DDEF8E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		865CA7A927B0A6C000DDEF8E /* AddNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNetworkView.swift; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 				86E3F00627B006CC0038FBD3 /* ContentView.swift */,
 				865CA7A727B08D3600DDEF8E /* DataController.swift */,
 				865CA7A527B086BE00DDEF8E /* DetailView.swift */,
-				8643A47127B19189005F821B /* Extensions.swift */,
 				86A0773C27B16F07004C44F7 /* ShareSheet.swift */,
 				865CA7AB27B0BF5F00DDEF8E /* ImageSaver.swift */,
 				86E3F00427B006CC0038FBD3 /* WiFi-QR-Generator-App.swift */,
@@ -166,7 +163,6 @@
 				86E3F01127B006CD0038FBD3 /* Wi-Fi-QR-Generator.xcdatamodeld in Sources */,
 				865CA7AA27B0A6C000DDEF8E /* AddNetworkView.swift in Sources */,
 				865CA7AC27B0BF5F00DDEF8E /* ImageSaver.swift in Sources */,
-				8643A47227B19189005F821B /* Extensions.swift in Sources */,
 				86E3F00727B006CC0038FBD3 /* ContentView.swift in Sources */,
 				865CA7A627B086BE00DDEF8E /* DetailView.swift in Sources */,
 				86A0773D27B16F07004C44F7 /* ShareSheet.swift in Sources */,
