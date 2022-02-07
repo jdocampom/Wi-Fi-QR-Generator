@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8643A47227B19189005F821B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8643A47127B19189005F821B /* Extensions.swift */; };
+		865CA7A627B086BE00DDEF8E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865CA7A527B086BE00DDEF8E /* DetailView.swift */; };
+		865CA7A827B08D3600DDEF8E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865CA7A727B08D3600DDEF8E /* DataController.swift */; };
+		865CA7AA27B0A6C000DDEF8E /* AddNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865CA7A927B0A6C000DDEF8E /* AddNetworkView.swift */; };
+		865CA7AC27B0BF5F00DDEF8E /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865CA7AB27B0BF5F00DDEF8E /* ImageSaver.swift */; };
+		86A0773B27B1615D004C44F7 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A0773A27B1615D004C44F7 /* AboutView.swift */; };
+		86A0773D27B16F07004C44F7 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A0773C27B16F07004C44F7 /* ShareSheet.swift */; };
+		86E3F00527B006CC0038FBD3 /* WiFi-QR-Generator-App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E3F00427B006CC0038FBD3 /* WiFi-QR-Generator-App.swift */; };
+		86E3F00727B006CC0038FBD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E3F00627B006CC0038FBD3 /* ContentView.swift */; };
+		86E3F00927B006CD0038FBD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E3F00827B006CD0038FBD3 /* Assets.xcassets */; };
+		86E3F00C27B006CD0038FBD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E3F00B27B006CD0038FBD3 /* Preview Assets.xcassets */; };
+		86E3F01127B006CD0038FBD3 /* Wi-Fi-QR-Generator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86E3F00F27B006CD0038FBD3 /* Wi-Fi-QR-Generator.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8643A47127B19189005F821B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		865CA7A527B086BE00DDEF8E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		865CA7A727B08D3600DDEF8E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		865CA7A927B0A6C000DDEF8E /* AddNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNetworkView.swift; sourceTree = "<group>"; };
+		865CA7AB27B0BF5F00DDEF8E /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		86A0773A27B1615D004C44F7 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		86A0773C27B16F07004C44F7 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		86E3F00127B006CC0038FBD3 /* Wi-Fi QR Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wi-Fi QR Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86E3F00427B006CC0038FBD3 /* WiFi-QR-Generator-App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WiFi-QR-Generator-App.swift"; sourceTree = "<group>"; };
+		86E3F00627B006CC0038FBD3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		86E3F00827B006CD0038FBD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86E3F00B27B006CD0038FBD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86E3F01027B006CD0038FBD3 /* Wi_Fi_QR_Generator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wi_Fi_QR_Generator.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86E3EFFE27B006CC0038FBD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86E3EFF827B006CC0038FBD3 = {
+			isa = PBXGroup;
+			children = (
+				86E3F00327B006CC0038FBD3 /* Wi-Fi QR Generator */,
+				86E3F00227B006CC0038FBD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86E3F00227B006CC0038FBD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86E3F00127B006CC0038FBD3 /* Wi-Fi QR Generator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86E3F00327B006CC0038FBD3 /* Wi-Fi QR Generator */ = {
+			isa = PBXGroup;
+			children = (
+				86A0773A27B1615D004C44F7 /* AboutView.swift */,
+				865CA7A927B0A6C000DDEF8E /* AddNetworkView.swift */,
+				86E3F00627B006CC0038FBD3 /* ContentView.swift */,
+				865CA7A727B08D3600DDEF8E /* DataController.swift */,
+				865CA7A527B086BE00DDEF8E /* DetailView.swift */,
+				8643A47127B19189005F821B /* Extensions.swift */,
+				86A0773C27B16F07004C44F7 /* ShareSheet.swift */,
+				865CA7AB27B0BF5F00DDEF8E /* ImageSaver.swift */,
+				86E3F00427B006CC0038FBD3 /* WiFi-QR-Generator-App.swift */,
+				86E3F00F27B006CD0038FBD3 /* Wi-Fi-QR-Generator.xcdatamodeld */,
+				86E3F00827B006CD0038FBD3 /* Assets.xcassets */,
+				86E3F00A27B006CD0038FBD3 /* Preview Content */,
+			);
+			path = "Wi-Fi QR Generator";
+			sourceTree = "<group>";
+		};
+		86E3F00A27B006CD0038FBD3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				86E3F00B27B006CD0038FBD3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86E3F00027B006CC0038FBD3 /* Wi-Fi QR Generator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86E3F01427B006CD0038FBD3 /* Build configuration list for PBXNativeTarget "Wi-Fi QR Generator" */;
+			buildPhases = (
+				86E3EFFD27B006CC0038FBD3 /* Sources */,
+				86E3EFFE27B006CC0038FBD3 /* Frameworks */,
+				86E3EFFF27B006CC0038FBD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wi-Fi QR Generator";
+			productName = "Wi-Fi QR Generator";
+			productReference = 86E3F00127B006CC0038FBD3 /* Wi-Fi QR Generator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86E3EFF927B006CC0038FBD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					86E3F00027B006CC0038FBD3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 86E3EFFC27B006CC0038FBD3 /* Build configuration list for PBXProject "Wi-Fi QR Generator" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86E3EFF827B006CC0038FBD3;
+			productRefGroup = 86E3F00227B006CC0038FBD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86E3F00027B006CC0038FBD3 /* Wi-Fi QR Generator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86E3EFFF27B006CC0038FBD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86E3F00C27B006CD0038FBD3 /* Preview Assets.xcassets in Resources */,
+				86E3F00927B006CD0038FBD3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86E3EFFD27B006CC0038FBD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A0773B27B1615D004C44F7 /* AboutView.swift in Sources */,
+				865CA7A827B08D3600DDEF8E /* DataController.swift in Sources */,
+				86E3F01127B006CD0038FBD3 /* Wi-Fi-QR-Generator.xcdatamodeld in Sources */,
+				865CA7AA27B0A6C000DDEF8E /* AddNetworkView.swift in Sources */,
+				865CA7AC27B0BF5F00DDEF8E /* ImageSaver.swift in Sources */,
+				8643A47227B19189005F821B /* Extensions.swift in Sources */,
+				86E3F00727B006CC0038FBD3 /* ContentView.swift in Sources */,
+				865CA7A627B086BE00DDEF8E /* DetailView.swift in Sources */,
+				86A0773D27B16F07004C44F7 /* ShareSheet.swift in Sources */,
+				86E3F00527B006CC0038FBD3 /* WiFi-QR-Generator-App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		86E3F01227B006CD0038FBD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		86E3F01327B006CD0038FBD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86E3F01527B006CD0038FBD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wi-Fi QR Generator/Preview Content\"";
+				DEVELOPMENT_TEAM = D27X6VQP35;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to access your library in order to save QR codes as images.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to access your library in order to save QR codes as images.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jdocampom.wixsite.Wi-Fi-QR-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		86E3F01627B006CD0038FBD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wi-Fi QR Generator/Preview Content\"";
+				DEVELOPMENT_TEAM = D27X6VQP35;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to access your library in order to save QR codes as images.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to access your library in order to save QR codes as images.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jdocampom.wixsite.Wi-Fi-QR-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86E3EFFC27B006CC0038FBD3 /* Build configuration list for PBXProject "Wi-Fi QR Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86E3F01227B006CD0038FBD3 /* Debug */,
+				86E3F01327B006CD0038FBD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86E3F01427B006CD0038FBD3 /* Build configuration list for PBXNativeTarget "Wi-Fi QR Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86E3F01527B006CD0038FBD3 /* Debug */,
+				86E3F01627B006CD0038FBD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		86E3F00F27B006CD0038FBD3 /* Wi-Fi-QR-Generator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				86E3F01027B006CD0038FBD3 /* Wi_Fi_QR_Generator.xcdatamodel */,
+			);
+			currentVersion = 86E3F01027B006CD0038FBD3 /* Wi_Fi_QR_Generator.xcdatamodel */;
+			path = "Wi-Fi-QR-Generator.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 86E3EFF927B006CC0038FBD3 /* Project object */;
+}
