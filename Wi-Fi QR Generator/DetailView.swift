@@ -95,10 +95,8 @@ struct DetailView: View {
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                Button {
+                Button("Save") {
                     showingDeleteAlert = true
-                } label: {
-                    Label("Delete", systemImage: "trash")
                 }
             }
             ToolbarItem(placement: .bottomBar) {
@@ -111,6 +109,7 @@ struct DetailView: View {
                             .multilineTextAlignment(.center)
                     }
                 }
+                .buttonStyle(BorderlessButtonStyle())
             }
             ToolbarItem(placement: .bottomBar) {
                 Button(role: .destructive) {
@@ -118,10 +117,11 @@ struct DetailView: View {
                 } label: {
                     HStack {
                         Image(systemName: "trash")
-                        Text("Delete")
+                        Text("Delete Network")
                             .multilineTextAlignment(.center)
                     }
                 }
+                .buttonStyle(BorderlessButtonStyle())
             }
         }
     }
