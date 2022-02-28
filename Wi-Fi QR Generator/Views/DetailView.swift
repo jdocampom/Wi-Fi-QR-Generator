@@ -50,7 +50,7 @@ struct DetailView: View {
                     Text("Password")
                     Spacer()
                     Text(network.password ?? "Unknown")
-//                    Text(String(repeating: "*", count: network.password!.count))
+                        .font(Font.custom("SF-Mono-Regular", size: 17))
                         .textSelection(.enabled)
                         .foregroundColor(.secondary)
                 }

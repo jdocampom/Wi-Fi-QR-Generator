@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21E5196i" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20084" systemVersion="21E5222a" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
     <entity name="Network" representedClassName="Network" syncable="YES" codeGenerationType="class">
-        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="hidden" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
-        <attribute name="password" optional="YES" attributeType="String"/>
-        <attribute name="security" optional="YES" attributeType="String"/>
-        <attribute name="ssid" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" allowsCloudEncryption="YES" usesScalarValueType="NO"/>
+        <attribute name="hidden" optional="YES" attributeType="Boolean" allowsCloudEncryption="YES" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" allowsCloudEncryption="YES" usesScalarValueType="NO"/>
+        <attribute name="password" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="security" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="ssid" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
     </entity>
     <elements>
         <element name="Network" positionX="-63" positionY="-18" width="128" height="119"/>

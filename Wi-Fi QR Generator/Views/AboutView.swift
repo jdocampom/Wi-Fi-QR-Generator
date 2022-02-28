@@ -60,7 +60,7 @@ struct AboutView: View {
             /// Tag: VStack View Modifiers
             .padding(.vertical)
             /// Navigation Bar Title and Display Mode
-            .navigationTitle("About")
+            .navigationTitle("About the App")
             .navigationBarTitleDisplayMode(.inline)
             /// Dismiss Button
             .toolbar {

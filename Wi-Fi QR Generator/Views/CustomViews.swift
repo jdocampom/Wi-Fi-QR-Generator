@@ -18,6 +18,7 @@ struct TipButton: View {
                     Text(tip.title)
                         .padding(.bottom, 1)
                     Text(tip.price!)
+                        .fontWeight(.bold)
                 }
             }
             .buttonStyle(TipButtonStyle())
@@ -29,6 +30,7 @@ struct TipButton: View {
 struct TipButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
+            .frame(width: UIScreen.screenWidth / 4)
             .padding(10)
             .background(.blue)
             .foregroundColor(.white)

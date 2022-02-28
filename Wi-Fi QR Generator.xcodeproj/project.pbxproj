@@ -13,6 +13,7 @@
 		865851A227CD161D00FC7ED1 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865851A127CD161D00FC7ED1 /* StoreManager.swift */; };
 		865851A527CD24E800FC7ED1 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865851A427CD24E800FC7ED1 /* Tip.swift */; };
 		865851A827CD33E900FC7ED1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865851A727CD33E900FC7ED1 /* StoreKit.framework */; };
+		865851AB27CD604B00FC7ED1 /* SF-Mono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 865851AD27CD604B00FC7ED1 /* SF-Mono-Regular.otf */; };
 		865CA7A627B086BE00DDEF8E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865CA7A527B086BE00DDEF8E /* DetailView.swift */; };
 		865CA7A827B08D3600DDEF8E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865CA7A727B08D3600DDEF8E /* DataController.swift */; };
 		865CA7AA27B0A6C000DDEF8E /* AddNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865CA7A927B0A6C000DDEF8E /* AddNetworkView.swift */; };
@@ -33,6 +34,8 @@
 		865851A127CD161D00FC7ED1 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		865851A427CD24E800FC7ED1 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		865851A727CD33E900FC7ED1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		865851AC27CD604B00FC7ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/SF-Mono-Regular.otf"; sourceTree = "<group>"; };
+		865851AE27CD606D00FC7ED1 /* Wi-Fi-QR-Generator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Wi-Fi-QR-Generator-Info.plist"; sourceTree = SOURCE_ROOT; };
 		865CA7A527B086BE00DDEF8E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		865CA7A727B08D3600DDEF8E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		865CA7A927B0A6C000DDEF8E /* AddNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNetworkView.swift; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 				8658519727CC50BB00FC7ED1 /* Extensions.swift */,
 				865CA7AB27B0BF5F00DDEF8E /* ImageSaver.swift */,
 				86A0773C27B16F07004C44F7 /* ShareSheet.swift */,
+				865851AD27CD604B00FC7ED1 /* SF-Mono-Regular.otf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -128,6 +132,7 @@
 		86E3F00327B006CC0038FBD3 /* Wi-Fi QR Generator */ = {
 			isa = PBXGroup;
 			children = (
+				865851AE27CD606D00FC7ED1 /* Wi-Fi-QR-Generator-Info.plist */,
 				86E3F00427B006CC0038FBD3 /* WiFi-QR-Generator-App.swift */,
 				86E3F00827B006CD0038FBD3 /* Assets.xcassets */,
 				865851A327CD1F0600FC7ED1 /* Persistance */,
@@ -205,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865851AB27CD604B00FC7ED1 /* SF-Mono-Regular.otf in Resources */,
 				86E3F00C27B006CD0038FBD3 /* Preview Assets.xcassets in Resources */,
 				8658519F27CD0C1300FC7ED1 /* Products.storekit in Resources */,
 				86E3F00927B006CD0038FBD3 /* Assets.xcassets in Resources */,
@@ -235,6 +241,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		865851AD27CD604B00FC7ED1 /* SF-Mono-Regular.otf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				865851AC27CD604B00FC7ED1 /* Base */,
+			);
+			name = "SF-Mono-Regular.otf";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		86E3F01227B006CD0038FBD3 /* Debug */ = {
@@ -364,6 +381,7 @@
 				DEVELOPMENT_TEAM = D27X6VQP35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wi-Fi-QR-Generator-Info.plist";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to access your library in order to save QR codes as images.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to access your library in order to save QR codes as images.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -396,6 +414,7 @@
 				DEVELOPMENT_TEAM = D27X6VQP35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wi-Fi-QR-Generator-Info.plist";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to access your library in order to save QR codes as images.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to access your library in order to save QR codes as images.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
