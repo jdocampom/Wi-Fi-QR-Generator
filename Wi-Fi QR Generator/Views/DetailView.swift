@@ -9,6 +9,8 @@ import CoreImage
 import LinkPresentation
 import SwiftUI
 
+// MARK: - DetailView Properties and Main SwiftUI View
+
 struct DetailView: View {
     
     let network: Network
@@ -17,6 +19,7 @@ struct DetailView: View {
     @Environment(\.dismiss) private var dismiss
     
     @State private var items: [Any] = []
+    
     @State private var showingShareSheet = false
     @State private var showingDeleteAlert = false
     @State private var qrCode: UIImage? = nil
@@ -40,23 +43,28 @@ struct DetailView: View {
                     Text("SSID")
                     Spacer()
                     Text(network.ssid ?? "Unknown")
-                        .textSelection(.enabled)                }
+                        .textSelection(.enabled)
+                        .foregroundColor(.secondary)
+                }
                 HStack {
                     Text("Password")
                     Spacer()
                     Text(network.password ?? "Unknown")
 //                    Text(String(repeating: "*", count: network.password!.count))
                         .textSelection(.enabled)
+                        .foregroundColor(.secondary)
                 }
                 HStack {
                     Text("Security")
                     Spacer()
                     Text(network.security ?? "Unknown")
+                        .foregroundColor(.secondary)
                 }
                 HStack {
                     Text("Hidden Network")
                     Spacer()
                     Text(network.hidden == true ? "Yes" : "No" )
+                        .foregroundColor(.secondary)
                 }
             }
             Section(header: Text("QR Code")) {
@@ -91,14 +99,9 @@ struct DetailView: View {
             Text("Are you sure you want to delete this network?")
         }
         .sheet(isPresented: $showingShareSheet) {
-            ShareSheet(items: items)
+            ShareSheet(items: [UIImage(data: generateQR(ssid: network.ssid ?? "", security: network.security ?? "" , password: network.password ?? "", hidden: network.hidden)!)!])
         }
         .toolbar {
-//            ToolbarItem(placement: .navigationBarTrailing) {
-//                Button("Save") {
-//                    dismiss()
-//                }
-//            }
             ToolbarItem(placement: .bottomBar) {
                 Button {
                     showShareQRSheet()
@@ -127,8 +130,11 @@ struct DetailView: View {
     }
 }
 
+// MARK: - DetailView Methods
+
 extension DetailView {
     
+    /// Tag: Generate QR Code from Network Data
     func generateQR(ssid: String, security: String, password: String, hidden: Bool) -> Data? {
         var passcode = ""
         var encryptionType = ""
@@ -157,31 +163,20 @@ extension DetailView {
         return uiimage.pngData()!
     }
     
+    /// Tag: Show Share QR ActivityViewController
     func showShareQRSheet() {
-        shareQR()
-//        shareCode(image: image)
         showingShareSheet.toggle()
     }
     
+    /// Tag: Export QR to ActivityViewController
     func shareQR() {
         items.removeAll()
         items.append(UIImage(data: generateQR(ssid: network.ssid ?? "", security: network.security ?? "" , password: network.password ?? "", hidden: network.hidden)!)!)
-//                items.append(UIImage(data: generateQR(ssid: network.ssid ?? "", security: network.security ?? "" , password: network.password ?? "", hidden: network.hidden)!)!.resized(withPercentage: 0.25)!)
     }
     
+    /// Tag: Delete Network
     func deleteNetwork() {
         viewContext.delete(network)
         dismiss()
     }
-    
-//    func shareCode(image: UIImage) {
-//        let qrCode = image
-//        let shareSheet = UIActivityViewController(activityItems: [qrCode], applicationActivities: nil)
-//        UIApplication.shared.windows.first?.rootViewController?.present(shareSheet, animated: true, completion: nil)
-//        if UIDevice.current.userInterfaceIdiom == .pad {
-//            shareSheet.popoverPresentationController?.sourceView = UIApplication.shared.windows.first
-//            shareSheet.popoverPresentationController?.sourceRect = CGRect(x: UIScreen.main.bounds.width / 2.1, y: UIScreen.main.bounds.height / 1.3, width: 200, height: 200)
-//        }
-//    }
-    
 }
