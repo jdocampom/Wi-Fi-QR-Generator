@@ -125,6 +125,9 @@ struct DetailView: View {
             }
         }
     }
+}
+
+extension DetailView {
     
     func generateQR(ssid: String, security: String, password: String, hidden: Bool) -> Data? {
         var passcode = ""
@@ -156,17 +159,29 @@ struct DetailView: View {
     
     func showShareQRSheet() {
         shareQR()
+//        shareCode(image: image)
         showingShareSheet.toggle()
     }
     
     func shareQR() {
         items.removeAll()
         items.append(UIImage(data: generateQR(ssid: network.ssid ?? "", security: network.security ?? "" , password: network.password ?? "", hidden: network.hidden)!)!)
+//                items.append(UIImage(data: generateQR(ssid: network.ssid ?? "", security: network.security ?? "" , password: network.password ?? "", hidden: network.hidden)!)!.resized(withPercentage: 0.25)!)
     }
     
     func deleteNetwork() {
         viewContext.delete(network)
         dismiss()
     }
+    
+//    func shareCode(image: UIImage) {
+//        let qrCode = image
+//        let shareSheet = UIActivityViewController(activityItems: [qrCode], applicationActivities: nil)
+//        UIApplication.shared.windows.first?.rootViewController?.present(shareSheet, animated: true, completion: nil)
+//        if UIDevice.current.userInterfaceIdiom == .pad {
+//            shareSheet.popoverPresentationController?.sourceView = UIApplication.shared.windows.first
+//            shareSheet.popoverPresentationController?.sourceRect = CGRect(x: UIScreen.main.bounds.width / 2.1, y: UIScreen.main.bounds.height / 1.3, width: 200, height: 200)
+//        }
+//    }
     
 }

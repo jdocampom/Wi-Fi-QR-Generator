@@ -11,7 +11,7 @@ struct AddNetworkView: View {
     
     @Environment(\.presentationMode) private var presentationMode
     @Environment(\.managedObjectContext) private var viewContext
-    @Environment(\.dismiss) private var dismiss
+//    @Environment(\.dismiss) private var dismiss
     
     @State private var ssid = ""
     @State private var password = ""
@@ -66,7 +66,8 @@ struct AddNetworkView: View {
                     newNetwork.date = Date()
                     newNetwork.hidden = hidden
                     try? viewContext.save()
-                    dismiss()
+                    self.presentationMode.wrappedValue.dismiss()
+//                    dismiss()
                 }
                     .disabled(didPassInputValidation == false))
         }

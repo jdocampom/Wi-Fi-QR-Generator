@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8658519827CC50BB00FC7ED1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658519727CC50BB00FC7ED1 /* Extensions.swift */; };
+		8658519B27CC517700FC7ED1 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658519A27CC517700FC7ED1 /* CustomViews.swift */; };
+		8658519F27CD0C1300FC7ED1 /* Products.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 8658519E27CD0C1300FC7ED1 /* Products.storekit */; };
+		865851A227CD161D00FC7ED1 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865851A127CD161D00FC7ED1 /* StoreManager.swift */; };
+		865851A527CD24E800FC7ED1 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865851A427CD24E800FC7ED1 /* Tip.swift */; };
+		865851A827CD33E900FC7ED1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865851A727CD33E900FC7ED1 /* StoreKit.framework */; };
 		865CA7A627B086BE00DDEF8E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865CA7A527B086BE00DDEF8E /* DetailView.swift */; };
 		865CA7A827B08D3600DDEF8E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865CA7A727B08D3600DDEF8E /* DataController.swift */; };
 		865CA7AA27B0A6C000DDEF8E /* AddNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865CA7A927B0A6C000DDEF8E /* AddNetworkView.swift */; };
@@ -21,6 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8658519727CC50BB00FC7ED1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8658519A27CC517700FC7ED1 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
+		8658519E27CD0C1300FC7ED1 /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
+		865851A127CD161D00FC7ED1 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		865851A427CD24E800FC7ED1 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		865851A727CD33E900FC7ED1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		865CA7A527B086BE00DDEF8E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		865CA7A727B08D3600DDEF8E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		865CA7A927B0A6C000DDEF8E /* AddNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNetworkView.swift; sourceTree = "<group>"; };
@@ -40,17 +52,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865851A827CD33E900FC7ED1 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8658519627CC50A900FC7ED1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8658519727CC50BB00FC7ED1 /* Extensions.swift */,
+				865CA7AB27B0BF5F00DDEF8E /* ImageSaver.swift */,
+				86A0773C27B16F07004C44F7 /* ShareSheet.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8658519927CC513B00FC7ED1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86A0773A27B1615D004C44F7 /* AboutView.swift */,
+				86E3F00627B006CC0038FBD3 /* ContentView.swift */,
+				8658519A27CC517700FC7ED1 /* CustomViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		865851A027CD15F900FC7ED1 /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				865851A127CD161D00FC7ED1 /* StoreManager.swift */,
+				865851A427CD24E800FC7ED1 /* Tip.swift */,
+				8658519E27CD0C1300FC7ED1 /* Products.storekit */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
+		865851A327CD1F0600FC7ED1 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				865CA7A727B08D3600DDEF8E /* DataController.swift */,
+				86E3F00F27B006CD0038FBD3 /* Wi-Fi-QR-Generator.xcdatamodeld */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
+		865851A627CD33E900FC7ED1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				865851A727CD33E900FC7ED1 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		86E3EFF827B006CC0038FBD3 = {
 			isa = PBXGroup;
 			children = (
 				86E3F00327B006CC0038FBD3 /* Wi-Fi QR Generator */,
 				86E3F00227B006CC0038FBD3 /* Products */,
+				865851A627CD33E900FC7ED1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,15 +126,13 @@
 		86E3F00327B006CC0038FBD3 /* Wi-Fi QR Generator */ = {
 			isa = PBXGroup;
 			children = (
-				86A0773A27B1615D004C44F7 /* AboutView.swift */,
-				865CA7A927B0A6C000DDEF8E /* AddNetworkView.swift */,
-				86E3F00627B006CC0038FBD3 /* ContentView.swift */,
-				865CA7A727B08D3600DDEF8E /* DataController.swift */,
-				865CA7A527B086BE00DDEF8E /* DetailView.swift */,
-				86A0773C27B16F07004C44F7 /* ShareSheet.swift */,
-				865CA7AB27B0BF5F00DDEF8E /* ImageSaver.swift */,
 				86E3F00427B006CC0038FBD3 /* WiFi-QR-Generator-App.swift */,
-				86E3F00F27B006CD0038FBD3 /* Wi-Fi-QR-Generator.xcdatamodeld */,
+				865CA7A927B0A6C000DDEF8E /* AddNetworkView.swift */,
+				865CA7A527B086BE00DDEF8E /* DetailView.swift */,
+				8658519627CC50A900FC7ED1 /* Resources */,
+				865851A027CD15F900FC7ED1 /* StoreKit */,
+				8658519927CC513B00FC7ED1 /* Views */,
+				865851A327CD1F0600FC7ED1 /* Persistance */,
 				86E3F00827B006CD0038FBD3 /* Assets.xcassets */,
 				86E3F00A27B006CD0038FBD3 /* Preview Content */,
 			);
@@ -147,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86E3F00C27B006CD0038FBD3 /* Preview Assets.xcassets in Resources */,
+				8658519F27CD0C1300FC7ED1 /* Products.storekit in Resources */,
 				86E3F00927B006CD0038FBD3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,12 +220,16 @@
 			files = (
 				86A0773B27B1615D004C44F7 /* AboutView.swift in Sources */,
 				865CA7A827B08D3600DDEF8E /* DataController.swift in Sources */,
+				865851A227CD161D00FC7ED1 /* StoreManager.swift in Sources */,
 				86E3F01127B006CD0038FBD3 /* Wi-Fi-QR-Generator.xcdatamodeld in Sources */,
 				865CA7AA27B0A6C000DDEF8E /* AddNetworkView.swift in Sources */,
 				865CA7AC27B0BF5F00DDEF8E /* ImageSaver.swift in Sources */,
+				8658519827CC50BB00FC7ED1 /* Extensions.swift in Sources */,
 				86E3F00727B006CC0038FBD3 /* ContentView.swift in Sources */,
 				865CA7A627B086BE00DDEF8E /* DetailView.swift in Sources */,
 				86A0773D27B16F07004C44F7 /* ShareSheet.swift in Sources */,
+				865851A527CD24E800FC7ED1 /* Tip.swift in Sources */,
+				8658519B27CC517700FC7ED1 /* CustomViews.swift in Sources */,
 				86E3F00527B006CC0038FBD3 /* WiFi-QR-Generator-App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

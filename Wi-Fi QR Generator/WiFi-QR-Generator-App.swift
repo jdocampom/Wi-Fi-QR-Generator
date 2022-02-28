@@ -11,11 +11,13 @@ import SwiftUI
 struct Wi_Fi_QR_GeneratorApp: App {
     
     @StateObject private var dataController = DataController()
+    @StateObject private var store = Store()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
+                .environmentObject(store)
         }
     }
     
