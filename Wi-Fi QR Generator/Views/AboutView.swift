@@ -20,6 +20,7 @@ struct AboutView: View {
                 Image("icon")
                     .resizable()
                     .frame(width: 128, height: 128)
+                    .clipShape(RoundedRectangle(cornerRadius: 25))
                 Spacer()
                 Text("Wi-Fi QR Generator")
                     .font(.title)
