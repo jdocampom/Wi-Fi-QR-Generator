@@ -7,34 +7,34 @@
 
 import SwiftUI
 
-//struct CustomViews: View {
-//    var body: some View {
-//        Button {
-//            test()
-//        } label: {
-//            VStack(alignment: .center) {
-//                Text("Small Tip")
-//                Text("💰").font(.largeTitle)
-//            }
-//                .padding(10)
-//                .foregroundColor(.white)
-//                .background(.blue)
-//                .clipShape(RoundedRectangle(cornerRadius: 15))
-//        }
-//    }
-//
-//    func test() {
-//
-//    }
-//
-//}
+/// Tag: Tip Button
+struct TipButton: View {
+    let tip: Tip
+    let action: () -> Void
+    var body: some View {
+        HStack {
+            Button(action: action) {
+                VStack(alignment: .center) {
+                    Text(tip.title)
+                        .padding(.bottom, 1)
+                    Text(tip.price!)
+                }
+            }
+            .buttonStyle(TipButtonStyle())
+        }
+    }
+}
 
-struct TipButton: ButtonStyle {
+/// Tag: Tip Button Style Modifier
+struct TipButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .padding(10)
             .background(.blue)
             .foregroundColor(.white)
             .cornerRadius(15)
+            .scaleEffect(configuration.isPressed ? 0.85 : 1)
     }
 }
+
+

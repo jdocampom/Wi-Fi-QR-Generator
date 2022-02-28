@@ -72,9 +72,11 @@
 		8658519927CC513B00FC7ED1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				865CA7A927B0A6C000DDEF8E /* AddNetworkView.swift */,
 				86A0773A27B1615D004C44F7 /* AboutView.swift */,
 				86E3F00627B006CC0038FBD3 /* ContentView.swift */,
 				8658519A27CC517700FC7ED1 /* CustomViews.swift */,
+				865CA7A527B086BE00DDEF8E /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,13 +129,11 @@
 			isa = PBXGroup;
 			children = (
 				86E3F00427B006CC0038FBD3 /* WiFi-QR-Generator-App.swift */,
-				865CA7A927B0A6C000DDEF8E /* AddNetworkView.swift */,
-				865CA7A527B086BE00DDEF8E /* DetailView.swift */,
+				86E3F00827B006CD0038FBD3 /* Assets.xcassets */,
+				865851A327CD1F0600FC7ED1 /* Persistance */,
 				8658519627CC50A900FC7ED1 /* Resources */,
 				865851A027CD15F900FC7ED1 /* StoreKit */,
 				8658519927CC513B00FC7ED1 /* Views */,
-				865851A327CD1F0600FC7ED1 /* Persistance */,
-				86E3F00827B006CD0038FBD3 /* Assets.xcassets */,
 				86E3F00A27B006CD0038FBD3 /* Preview Content */,
 			);
 			path = "Wi-Fi QR Generator";

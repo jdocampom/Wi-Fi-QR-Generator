@@ -8,15 +8,16 @@
 import StoreKit
 import SwiftUI
 
+// MARK: - AboutView Properties
+
 struct AboutView: View {
-    
+    /// Tag: Properties
     @Environment(\.dismiss) private var dismiss
     @EnvironmentObject private var store: Store
-    
+    /// Tag: Main SwiftUI View
     var body: some View {
         NavigationView {
-            VStack(alignment: .center) {
-                Spacer()
+            LazyVStack(alignment: .center) {
                 Image("icon")
                     .resizable()
                     .frame(width: 128, height: 128)
@@ -45,9 +46,8 @@ struct AboutView: View {
                     Text("Want to support my work? Leave a Tip 💰")
                         .padding(.bottom)
                     HStack {
-                        
                         ForEach(store.fetchedProducts, id: \.self) { product in
-                            MakeTipButton(tip: Tip(product: product)) {
+                            TipButton(tip: Tip(product: product)) {
                                 print("Purchase Tip Button Tapped: \(product.localizedTitle)")
                                 if let product = store.product(for: product.productIdentifier) {
                                     store.purchaseProduct(product)
@@ -57,8 +57,12 @@ struct AboutView: View {
                     }
                 }
             }
+            /// Tag: VStack View Modifiers
+            .padding(.vertical)
+            /// Navigation Bar Title and Display Mode
             .navigationTitle("About")
             .navigationBarTitleDisplayMode(.inline)
+            /// Dismiss Button
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Close") {
@@ -70,44 +74,19 @@ struct AboutView: View {
     }
 }
 
+// MARK: - AboutView Methods
 
 extension AboutView {
-    
     /// Tag: Show App Store Rating Pop-Up
-    func showRatingPopUp() { SKStoreReviewController.requestReviewInCurrentScene() }
-    
-    func test() { print("PURCHASE TIP BUTTON TAPPED") }
+    func showRatingPopUp() {
+        SKStoreReviewController.requestReviewInCurrentScene()
+    }
 }
 
 // MARK: - AboutView SwiftUI Previews
 
-//struct AboutView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        AboutView()
-//    }
-//}
-
-// com.jdocampom.wixsite.Wi-Fi-QR-Generator-SmallTip
-
-// MARK: - Tip Button Previews
-
-struct MakeTipButton: View {
-    let tip: Tip
-    let action: () -> Void
-    var body: some View {
-        HStack {
-            Button(action: action) {
-                VStack(alignment: .center) {
-                    Text(tip.title)
-                        .padding(.bottom, 1)
-                    Text(tip.price!)
-                }
-            }
-            .buttonStyle(TipButton())
-            .onTapGesture {
-                self.opacity(0.7)
-            }
-        }
+struct AboutView_Previews: PreviewProvider {
+    static var previews: some View {
+        AboutView()
     }
-    
 }
