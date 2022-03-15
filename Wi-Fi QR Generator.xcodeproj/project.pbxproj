@@ -25,6 +25,7 @@
 		86E3F00927B006CD0038FBD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E3F00827B006CD0038FBD3 /* Assets.xcassets */; };
 		86E3F00C27B006CD0038FBD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E3F00B27B006CD0038FBD3 /* Preview Assets.xcassets */; };
 		86E3F01127B006CD0038FBD3 /* Wi-Fi-QR-Generator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86E3F00F27B006CD0038FBD3 /* Wi-Fi-QR-Generator.xcdatamodeld */; };
+		86F36E2327E01CE900F611C4 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F36E2227E01CE900F611C4 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		86E3F00827B006CD0038FBD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86E3F00B27B006CD0038FBD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		86E3F01027B006CD0038FBD3 /* Wi_Fi_QR_Generator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wi_Fi_QR_Generator.xcdatamodel; sourceTree = "<group>"; };
+		86F36E2127E01CE000F611C4 /* Wi-Fi QR Generator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wi-Fi QR Generator.entitlements"; sourceTree = "<group>"; };
+		86F36E2227E01CE900F611C4 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				865851A827CD33E900FC7ED1 /* StoreKit.framework in Frameworks */,
+				86F36E2327E01CE900F611C4 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +111,7 @@
 		865851A627CD33E900FC7ED1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				86F36E2227E01CE900F611C4 /* CloudKit.framework */,
 				865851A727CD33E900FC7ED1 /* StoreKit.framework */,
 			);
 			name = Frameworks;
@@ -132,6 +137,7 @@
 		86E3F00327B006CC0038FBD3 /* Wi-Fi QR Generator */ = {
 			isa = PBXGroup;
 			children = (
+				86F36E2127E01CE000F611C4 /* Wi-Fi QR Generator.entitlements */,
 				865851AE27CD606D00FC7ED1 /* Wi-Fi-QR-Generator-Info.plist */,
 				86E3F00427B006CC0038FBD3 /* WiFi-QR-Generator-App.swift */,
 				86E3F00827B006CD0038FBD3 /* Assets.xcassets */,
@@ -375,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Wi-Fi QR Generator/Wi-Fi QR Generator.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wi-Fi QR Generator/Preview Content\"";
@@ -394,7 +401,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jdocampom.wixsite.Wi-Fi-QR-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -408,6 +415,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Wi-Fi QR Generator/Wi-Fi QR Generator.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wi-Fi QR Generator/Preview Content\"";
@@ -427,7 +435,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jdocampom.wixsite.Wi-Fi-QR-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

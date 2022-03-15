@@ -10,7 +10,7 @@ import Foundation
 
 class DataController: ObservableObject {
     
-    let container = NSPersistentContainer(name: "Wi-Fi-QR-Generator")
+    let container = NSPersistentCloudKitContainer(name: "Wi-Fi-QR-Generator")
 
     init() {
         container.loadPersistentStores { description, error in
