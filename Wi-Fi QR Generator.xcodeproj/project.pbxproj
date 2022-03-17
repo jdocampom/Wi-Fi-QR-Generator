@@ -28,6 +28,19 @@
 		86F36E2327E01CE900F611C4 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F36E2227E01CE900F611C4 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		86F36E4E27E0202800F611C4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8658519727CC50BB00FC7ED1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8658519A27CC517700FC7ED1 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
@@ -51,6 +64,7 @@
 		86E3F01027B006CD0038FBD3 /* Wi_Fi_QR_Generator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wi_Fi_QR_Generator.xcdatamodel; sourceTree = "<group>"; };
 		86F36E2127E01CE000F611C4 /* Wi-Fi QR Generator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wi-Fi QR Generator.entitlements"; sourceTree = "<group>"; };
 		86F36E2227E01CE900F611C4 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		86F36E2827E0202600F611C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				86E3F00327B006CC0038FBD3 /* Wi-Fi QR Generator */,
+				86F36E2727E0202300F611C4 /* Wi-Fi QR Code Generator */,
 				86E3F00227B006CC0038FBD3 /* Products */,
 				865851A627CD33E900FC7ED1 /* Frameworks */,
 			);
@@ -158,6 +173,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		86F36E2727E0202300F611C4 /* Wi-Fi QR Code Generator */ = {
+			isa = PBXGroup;
+			children = (
+				86F36E2827E0202600F611C4 /* Assets.xcassets */,
+			);
+			path = "Wi-Fi QR Code Generator";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,6 +191,7 @@
 				86E3EFFD27B006CC0038FBD3 /* Sources */,
 				86E3EFFE27B006CC0038FBD3 /* Frameworks */,
 				86E3EFFF27B006CC0038FBD3 /* Resources */,
+				86F36E4E27E0202800F611C4 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -185,7 +209,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					86E3F00027B006CC0038FBD3 = {
